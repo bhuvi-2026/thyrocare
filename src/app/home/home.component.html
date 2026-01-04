@@ -1,0 +1,332 @@
+<div class="">
+    <div class="col-md-4 col-sm-4 col-xs-6">
+        <div class="logo">
+            <a href="#">
+                <img src="https://wellness.thyrocare.com/NewAssets/img/NewLogo.svg" alt="logo"
+                    class="img-responsive t-logo">
+
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="col-md-4 col-sm-3 col-xs-6">
+        <div class="logo">
+            <a href="#">
+
+                <img src="img/aarogyam.webp" class="aarogyam-logo" alt="">
+
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-5 col-xs-12 order-2">
+
+        <div id="DSACODE" style="padding: 2px 0px;">
+            <div class="company-info clearfix">
+                <div class="company-info-item">
+
+                    <div class="contact">
+                        Have a Query? Give a Call on :
+
+                        <span style="color: #48519a;">
+                            <a href="tel:09871857858" id="w3s">
+                                <span id="Label2">7026449346</span></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home-banner">
+    <img src="https://b2capi.thyrocare.com/wellness/Emailer/DM_landing_page/images/bg/PROJ1055335,PROJ1055336,PROJ1055337,PROJ1055343,PROJ1055344,PROJ1055345,PROJ1055346,PROJ1055342_mob.jpg"
+        id="div_mobile" class="img-responsive">
+</div>
+<div class="find-home-box">
+    <div class="w3l-signup7" id="signup7">
+
+        <h3>Book Your Test Now</h3>
+        <fieldset>
+            <legend class="d-flex">Fill Out The Form</legend>
+
+            <div class="col-5">
+                <div class="form-group d-flex">
+                    <input name="txt_pincode" type="text" maxlength="6" id="txt_pincode" tabindex="1"
+                        class="form-control" onblur="valid_pin(this); Pinavalability(this);"
+                        placeholder="Enter Pin Code*" autocomplete="none" data-gtm-form-interact-field-id="0">
+
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="form-group">
+                    <input name="txt_ben1_name" type="text" id="txt_ben1_name" tabindex="2" autocomplete="off"
+                        class="form-control" placeholder="Enter Name*" onblur="return Validation_name();"
+                        style="margin-top: 0%;">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-5">
+                        <div class="form-group">
+                            <input name="txt_mob" type="text" maxlength="10" id="txt_mob" tabindex="4"
+                                class="form-control" autocomplete="off" placeholder="Enter Mobile no*"
+                                onblur="validate_mob(this);return mobValidation();" onpaste="return false"
+                                oncut="return false">
+
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <input name="txt_email" type="text" maxlength="40" id="txt_email" tabindex="3"
+                                    class="form-control"
+                                    onblur="javascript:return emailvalidation(this,'Please Enter valid E-Mail ID');checkemail();ValidateEmail();return emailValidation();checkEmail(this.value)"
+                                    autocomplete="off" placeholder="Email*">
+                            </div>
+                        </div>
+                        <input type="submit" name="genotp" value="Get OTP" onclick="return genotps();" id="genotp"
+                            class="btn btn-blue-book"
+                            style="width: 100%; margin-top: 0px; line-height: 15px; display: none;">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display: none;">
+                <div class="col-5">
+                    <span id="lblNumber"></span>
+                    <a href="#" onclick="return ChangeNumber();"><span id="lblChangeNumber" class="alert-txt">Change
+                            Number ?</span></a>
+                </div>
+                <div class="col-5">
+                    <span id="lblAlertCounter" style="font-size: 12px !important; margin-left: -14px !important;"
+                        class="alert"></span>
+                    <a href="#" style="color: white;"><span style="display: none;" id="ResendOtp"
+                            onclick="return ReseNdOtp();">Resend OTP</span></a>
+                </div>
+            </div>
+
+            <div class="col-12">
+            </div>
+
+            <div class="col-5">
+                <div class="form-group">
+                    <input name="txt_ben1_age" type="text" maxlength="3" id="txt_ben1_age" tabindex="5"
+                        placeholder="Age*" onchange="return age1(this);">
+
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="form-group">
+                    <select name="ddl_ben1_gender" id="ddl_ben1_gender" tabindex="6" class="form-control"
+                        onchange="return GenderValidation();">
+                        <option value="">Gender*</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-group">
+                    <textarea name="txt_address" rows="2" cols="20" maxlength="100" id="txt_address" tabindex="7"
+                        placeholder="Address (atleast 25 characters)*" class="form-control" onkeyup="Count(this,200)"
+                        onchange="Count(this,200),MinCount(this,25)" onkeypress="validateText_pattern(event);"
+                        onblur="javascript:RemoveExtraSpace(document.getElementById('txt_address').value,'txt_address');return addressValidation();"></textarea>
+
+                </div>
+            </div>
+            <span id="lblValidation" style="color:Red;font-weight:bold;"></span>
+
+
+
+
+            <div class="col-sm-12 clear">
+                <div id="Div1" class="form-group text-left main-rd" style="display: block;">
+                    <div class="form-group sub-label">
+                        <label id="Label3" class="inline" style="display: block;">
+                            Collection Type : &nbsp;&nbsp;&nbsp;</label>
+                        <label class="radio-" id="divradio1">
+                            <input value="HOME COLLECTION" name="optradio1" type="radio" id="Radio1" checked="checked"
+                                style="display: block;"><span id="divrr" style="display: block;">Home
+                                Collection</span></label>
+                        <label class="radio-" style="margin-left: 0px" id="divradio2">
+                            <input value="COLLECTION CENTER" name="optradio1" type="radio" id="Radio2"
+                                style="display: none;"><span id="divrty" style="display: none;">Collection
+                                Center</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="form-group">
+
+                    <select name="ddl_offer" id="ddl_offer" tabindex="9" class="form-control"
+                        onchange="Get_project_data_dropdown_list1(); check_ben_cnt(); ddl_set_ben_multiple();">
+                        <option value="">Select Package*</option>
+                        <option value="BASIC CHECKUP~1099~PROJ1055335~320~1~10~1~0">BASIC CHECKUP</option>
+                        <option value="EXECUTIVE CHECKUP~1750~PROJ1055336~611~1~10~1~0">EXECUTIVE CHECKUP</option>
+                        <option value="ADVANCED CHECKUP~2299~PROJ1055337~800~1~10~1~0">ADVANCED CHECKUP</option>
+                        <option value="COMPLETE CHECKUP~4799~PROJ1055343~1500~1~10~1~0">COMPLETE CHECKUP</option>
+                        <option value="AAROGYAM MALE~2599~PROJ1055344~1040~1~10~1~0">AAROGYAM MALE</option>
+                        <option value="AAROGYAM FEMALE~2799~PROJ1055345~1120~1~10~1~0">AAROGYAM FEMALE</option>
+                        <option value="AAROGYAM COUPLE OFFER~1650~PROJ1055346~330~2~2~2~0">AAROGYAM COUPLE OFFER
+                        </option>
+                        <option value="AAROGYAM XL WITH UTSH~6899~PROJ1055342~1500~1~10~1~0">AAROGYAM XL WITH UTSH
+                        </option>
+
+                    </select>
+                    <input type="hidden" name="NUMBERVAL" id="NUMBERVAL" value="7755884979">
+                    <input type="hidden" name="HiddenField1" id="HiddenField1" value="0">
+                    <input type="hidden" name="HiddenField2" id="HiddenField2" value="0">
+                    <input type="hidden" name="HiddenField3" id="HiddenField3" value="0">
+                    <input type="hidden" name="HiddenField4" id="HiddenField4" value="0">
+                    <input type="hidden" name="hdnBenif" id="hdnBenif" value="1">
+
+                    <input type="hidden" name="txt_name_[+'i'+].Name" value="' + this.value + '">
+
+                    <div id="hdnAll">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-5">
+                <div class="form-group">
+
+                    <input name="ddl_ben_count" type="text" readonly="readonly" id="ddl_ben_count" tabindex="10"
+                        class="form-control" value="1" onclick="clearallhidden();" onchange="Get_project_data();"
+                        data-toggle="modal" data-target="#myModal" placeholder="Select Beneficieries*">
+
+                </div>
+            </div>
+
+
+            <div id="DoctordIV" class="col-12" style="display: none !important;">
+                <div class="form-group" style="margin-bottom: 10px;">
+
+                    <select name="DdlDoctorRef" id="DdlDoctorRef" class="form-control">
+                        <option value="">Select Doctor Reference</option>
+
+                    </select>
+
+                </div>
+            </div>
+            <div class="col-12" id="SameDayReportDiv" style="display: none">
+                <div class="form-group">
+                    <input name="SameDayReport" type="checkbox" id="SameDayReport" onclick=""
+                        style="border: 1px solid #eee; visibility: visible;">
+                    <span id="ReportLabel" style="margin-top: -4px; margin-left: 10px;"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group col-5">
+
+                <input name="TxtDob" type="text" id="TxtDob" readonly="" placeholder="Select Appointment date*"
+                    onblur="return Appointment_validation()" class="hasDatepicker">
+            </div>
+
+            <div class="form-group col-5">
+                <select name="ddl_avlSlots" id="ddl_avlSlots" class="form-control">
+
+
+                    <option value="---Select Slot---">---Select Slot---</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="row" style="width: 100%;">
+                <div class="col-md-6">
+
+
+                </div>
+                <div class="col-md-6">
+
+
+                </div>
+                <div class="col-md-6">
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="col-sm-12 clear">
+                <div id="but_sumbit_online" class="form-group text-left" style="display: none;">
+                    <div class="form-group">
+                        <label id="lbl_payment" class="inline">
+                            Payment Mode : &nbsp;&nbsp;&nbsp;</label>
+                        <label class="radio-" style="display: none;">
+                            <input value="rdb_paynow" name="optradio" type="radio" id="rdb_paynow">&nbsp;Pay Now</label>
+                        <label class="radio-" style="margin-left: 15px">
+                            <input value="rdb_paylater" name="optradio" type="radio" id="rdb_paylater"
+                                checked="checked">&nbsp;Pay
+                            Later</label>
+                    </div>
+                </div>
+            </div>
+            <div id="div_display_info" class="col-sm-12 form-group l10 f11" style="display: none;">
+                You have selected
+                <span id="lbl_test_name_display"></span>
+                <span id="lbl_for">for</span>
+                <span id="lbl_ben_count"></span>
+                <span id="lbl_Beneficieries">Beneficiaries</span>
+                <span id="lbl_symbole"></span>
+                <del>
+                    <span id="lblshowdiscount"></span></del>&nbsp;
+                <span style="color: #FF0024;">
+                    <span id="lblcarttext"></span></span><span id="lbl_total"></span>
+            </div>
+            <div class="col-sm-12 form-group checkbox" id="hc_part">
+                <span name="switch" data-plugin-ios-switch=""><input id="chk_courier_charge" type="checkbox"
+                        name="chk_courier_charge"></span>
+                Additional Rs. 75 for Printed Reports
+            </div>
+            <div class="col-sm-12 clear f11" id="notify">
+                <div class="form-group f11">
+                    <div class="form-group">
+                        <label class="inline">
+                            Reach me on :&nbsp;</label>
+                        <span name="switch" data-plugin-ios-switch=""><input id="check_whtsapp" type="checkbox"
+                                name="check_whtsapp" checked="checked"></span>
+                        Whatsapp
+                        <span name="switch" data-plugin-ios-switch=""><input id="check_call" type="checkbox"
+                                name="check_call" checked="checked"></span>
+                        Call
+
+                        <span name="switch" data-plugin-ios-switch=""><input id="check_email" type="checkbox"
+                                name="check_email" checked="checked"></span>
+                        Email
+
+                        <span name="switch" data-plugin-ios-switch=""><input id="check_sms" type="checkbox"
+                                name="check_sms" checked="checked"></span>
+                        SMS
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 clear f11" id="DivCHC" style="display: none;">
+                <label style="color: red;">CHC Charges for <span id="spanBenCount"></span>Beneficiary is <span
+                        id="spanChcCharges"></span></label>
+            </div>
+            <div class="col-sm-12 form-group" id="dnd">
+                <input name="reg_check" type="checkbox" id="reg_check">&nbsp;
+                I authorize Thyrocare representative to contact me.I understand that this will override
+                the DND status on my mobile number.*
+            </div>
+            <div class="bottom">
+                <input type="submit" name="but_booknow" value="Book" onclick="return check();" id="but_booknow"
+                    style="display: block;">
+            </div>
+
+        </fieldset>
+
+    </div>
+    <div class="clear">
+    </div>
+</div>
