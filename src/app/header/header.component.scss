@@ -1,0 +1,101 @@
+#app {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.Header__header__By4D3 {
+    z-index: 4;
+    position: relative;
+}
+@media screen and (min-width: 769px) {
+    .Header__desktopHeader__W1nIA {
+        display: flex;
+    }
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+    .Header__paddingTopBottomItems__SynUd {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+.Header__paddingTopBottomItems__SynUd {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+    .Header__navigationItemText__ShdZ9 {
+        font-family: figtree, avenir, "Century Gothic", arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
+.Header__navigationItemText__ShdZ9 {
+    font-family: figtree, avenir, "Century Gothic", arial, sans-serif;
+    font-size: .8571428571rem;
+    font-weight: 700;
+    line-height: 16px;
+}
+.padding-0-8 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+    .Header__paddingTopBottomItems__SynUd {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+.Header__paddingTopBottomItems__SynUd {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.noAnchorColor {
+    color: #181a1f;
+    text-decoration: none; /* remove underline if class applied directly to <a> */
+}
+.gap-20 {
+    gap: 20px;
+}
+.pY-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.justifyEnd {
+    justify-content: flex-end;
+}
+.alignCenter {
+    align-items: center;
+}
+.Header__marginLeft16__Z3pvf {
+    margin-left: 16px;
+}
+.gutter-only {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.padding-0-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.AnimateTag__medium__RnVmI {
+    border-radius: 2px;
+    height: 14px;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 5px;
+}
+.AnimateTag__tag__gQCEo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    background-color: #ff6f61;
+    box-shadow: 0 0 1px #333;
+    min-width: max-content;
+}
