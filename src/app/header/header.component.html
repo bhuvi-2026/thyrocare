@@ -18,33 +18,20 @@
                             class="noAnchorColor flex alignCenter Header__paddingTopBottomItems__SynUd Header__navigationItem__AjlSS"
                             href="/online-doctor-consultation">
                             <div class="padding-0-8 Header__navigationItemText__ShdZ9">CONSULT DOCTORS</div>
-                        </a><a href="/cancer-care/home"
-                            class="noAnchorColor flex alignCenter Header__paddingTopBottomItems__SynUd Header__navigationItem__AjlSS"
-                            target="_blank" rel="noreferrer noopener nofollow">
-                            <div class="padding-0-8 Header__navigationItemText__ShdZ9">CANCER CARE</div>
-                        </a><a
-                            class="noAnchorColor flex alignCenter Header__paddingTopBottomItems__SynUd Header__navigationItem__AjlSS"
-                            href="/ayurveda">
-                            <div class="padding-0-8 Header__navigationItemText__ShdZ9">AYURVEDA</div>
                         </a><a href="/partnerships"
                             class="noAnchorColor flex alignCenter Header__paddingTopBottomItems__SynUd Header__navigationItem__AjlSS"
                             target="_blank" rel="noreferrer noopener nofollow">
                             <div class="padding-0-8 Header__navigationItemText__ShdZ9">PARTNERSHIPS</div>
-                        </a><a href="/subscription-plan/subscriptions"
-                            class="noAnchorColor flex alignCenter Header__paddingTopBottomItems__SynUd Header__navigationItem__AjlSS"
-                            target="_blank" rel="noreferrer noopener nofollow">
-                            <div class="padding-0-8 Header__navigationItemText__ShdZ9">CARE PLAN</div>
-                            <div class="AnimateTag__tag__gQCEo AnimateTag__medium__RnVmI AnimateTag__stopAnimation__WVOVI">SAVE MORE</div>
                         </a></div>
                 </div>
                 <div class="flex alignCenter justifyEnd pY-8 gap-20 undefined">
                     <div class="Header__marginLeft16__Z3pvf">
                         <div class="flex alignCenter">
-                            <div class="noAnchorColor" role="link" tabindex="0">
+                            <div class="noAnchorColor" role="link" tabindex="0" (click)="openModal('loginModal')">
                                 <div class="Header__navigationItemText__ShdZ9 pointer">Login</div>
                             </div>
                             <div class="gutter-only">|</div>
-                            <div role="link" tabindex="0">
+                            <div role="link" tabindex="0" (click)="openModal('loginModal')">
                                 <div class="Header__navigationItemText__ShdZ9 pointer">Signup</div>
                             </div>
                         </div>
@@ -73,3 +60,42 @@
         </div>
     </div>
 </div>
+<ng-template #loginModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">{{ step === 'mobile' ? 'Login' : 'Verify OTP' }}</h4>
+    <button type="button" class="btn-close" (click)="modal.dismiss()"></button>
+  </div>
+
+  <div class="modal-body">
+    <div *ngIf="step === 'mobile'">
+      <label class="form-label">Mobile number</label>
+      <input type="tel" class="form-control" [(ngModel)]="mobileNumber" placeholder="Enter mobile number" />
+      <div class="text-danger mt-1" *ngIf="error">{{ error }}</div>
+    </div>
+
+    <div *ngIf="step === 'otp'">
+      <p class="mb-2"><small class="text-muted">OTP sent to {{ mobileNumber }}</small></p>
+
+      <label class="form-label">Enter OTP</label>
+      <input type="text" class="form-control" [(ngModel)]="otp" placeholder="Enter OTP" />
+      <div class="text-danger mt-1" *ngIf="error">{{ error }}</div>
+
+      <div class="mt-2">
+        <small class="text-muted" *ngIf="!resendEnabled">Resend in {{ timer }}s</small>
+        <button class="btn btn-link p-0" *ngIf="resendEnabled" (click)="resendOtp()">Resend OTP</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">Cancel</button>
+
+    <button *ngIf="step === 'mobile'" type="button" class="btn btn-primary" (click)="sendOtp()">
+      Send OTP
+    </button>
+
+    <ng-container *ngIf="step === 'otp'">
+      <button type="button" class="btn btn-primary" (click)="verifyOtp()">Login</button>
+    </ng-container>
+  </div>
+</ng-template>
